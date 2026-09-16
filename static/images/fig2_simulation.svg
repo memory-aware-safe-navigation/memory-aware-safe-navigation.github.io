@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Figure 2 simulation environments placeholder">
+  <rect width="900" height="360" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="450" y="32" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1e293b">Fig. 2 — Simulation Environments (placeholder)</text>
+  <rect x="40" y="60" width="390" height="250" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="235" y="180" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#312e81">AWS RoboMaker</text>
+  <text x="235" y="210" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#312e81">Hospital World</text>
+  <text x="235" y="245" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4338ca">6 scenarios · 20 humans / trial</text>
+  <rect x="470" y="60" width="390" height="250" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="665" y="180" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#1e40af">AWS RoboMaker</text>
+  <text x="665" y="210" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#1e40af">Warehouse World</text>
+  <text x="665" y="245" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e40af">2 scenarios · 3 humans / trial</text>
+  <text x="450" y="340" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Drop hospital/warehouse screenshots here</text>
+</svg>
