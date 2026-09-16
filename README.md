@@ -25,15 +25,15 @@ Optional: enable a custom domain only if it does not reveal identity.
 
 | Asset | Path |
 |-------|------|
-| Paper PDF | `static/pdfs/paper.pdf` (already included if copied) |
-| Fig. 1 overview | `static/images/fig1_overview.svg` (or `.png`) |
-| Fig. 2 simulation | `static/images/fig2_simulation.svg` |
-| Fig. 3 trajectories | `static/images/fig3_trajectories.svg` |
-| Fig. 4 hardware | `static/images/fig4_hardware.svg` |
+| Paper PDF | `static/pdfs/paper.pdf` (anonymous camera-ready) |
+| Fig. 1 overview | `static/images/fig1_overview.png` |
+| Fig. 2 hospital / warehouse | `static/images/fig2_hospital.png`, `static/images/fig2_warehouse.jpg` |
+| Fig. 3 trajectories | `static/images/fig3_trajectories.png` |
+| Fig. 4 indoor / outdoor | `static/images/fig4_indoor.png`, `static/images/fig4_outdoor.png` |
 | Teaser / sim / hardware videos | `static/videos/*.mp4` (see `static/videos/README.txt`) |
 | Favicon | `static/images/favicon.svg` |
 
-Placeholder SVGs ship in `static/images/`. Overwrite them with anonymized camera-ready figures. Do **not** include watermarks, lab logos, author faces, or institution names in media.
+Camera-ready figures are wired in `index.html`. Do **not** include watermarks, lab logos, author faces, or institution names in media.
 
 After dropping a teaser video, add a `<video>` tag in `index.html` pointing to `static/videos/teaser.mp4`.
 
@@ -50,19 +50,15 @@ For code, prefer an anonymous hosting option such as **[anonymous.4open.science]
 From the site root, search for forbidden identity tokens (prior-lab surnames, institution short name, prior GitHub handle, prior lab name). Example (split so this README itself stays clean):
 
 ```bash
-# Reconstruct patterns locally; do not commit a filled-in copy of this command.
-A='Xu'; B='e'          # prior first-author surname fragment
-C='Figue'; D='roa'      # prior co-author surname
-E='Pe'; F='nn'          # institution short name
-G='yifan'; H='xueseas'  # prior GitHub handle
-I='Figue'; J='roa Robotics'
-
-rg -i "\\b${A}${B}\\b|\\b${C}${D}\\b|\\b${E}${F}\\b|${G}${H}|${I}${J}" .
+# Build the forbidden-token list privately (do not paste real names into tracked files).
+# Include prior surnames, institution short names, lab names, GitHub handles, and email local-parts.
+rg -i -f /tmp/anon-forbidden.txt .
 ```
 
-Expected: **zero matches** in HTML/CSS/JS/Markdown/SVG (ignore third-party icon font false positives if any).
+Expected: **zero matches** in HTML/CSS/JS/Markdown/SVG/images metadata (ignore third-party icon font false positives if any).
 
 Also scan for your real name, email, lab, university, social handles, ORCID, and personal homepage URLs.
+Never store the reconstructed token list inside this repository.
 
 Additional checks:
 

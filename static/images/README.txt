@@ -1,7 +1,10 @@
-Place anonymized figures here (SVG/PNG/JPG):
-  - fig1_overview.svg (or .png) — method pipeline
-  - fig2_simulation.svg — hospital / warehouse scenes
-  - fig3_trajectories.svg — trajectory comparison
-  - fig4_hardware.svg — indoor/outdoor hardware maps
+Camera-ready figures for the anonymous project page:
+  - fig1_overview.png — method pipeline (from icra_block_diagram.pdf)
+  - fig2_hospital.png — hospital simulation scenarios
+  - fig2_warehouse.jpg — warehouse simulation scenarios
+  - fig3_trajectories.png — Scenario 6 controller trajectories
+  - fig4_indoor.png — indoor hardware trajectory / occupancy
+  - fig4_outdoor.png — outdoor hardware trajectory / occupancy
+  - favicon.svg — site icon
 
-Placeholder SVGs are already present; overwrite them with paper figures for the final anonymous site.
+Do not include watermarks, lab logos, author faces, or institution names.
