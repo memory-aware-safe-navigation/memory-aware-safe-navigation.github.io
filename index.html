@@ -132,12 +132,12 @@
             </figcaption>
           </figure>
           <div class="has-text-centered" style="margin-top:1.25rem;" id="demo">
-            <video controls playsinline preload="metadata"
-              style="width:100%; max-width:960px; border-radius:8px; background:#111;"
-              poster="">
+            <video controls controlsList="nodownload" playsinline preload="metadata" oncontextmenu="return false;"
+              style="width:100%; max-width:960px; border-radius:8px; background:#111;" poster="">
               <source src="static/videos/teaser.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+
             <p class="figure-caption" style="margin-top:0.75rem;">
               <strong>Video.</strong>
               Demonstration of the memory-aware multi-sensor navigation framework: simulation comparisons
